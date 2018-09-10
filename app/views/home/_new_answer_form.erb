@@ -1,22 +1,22 @@
-<div class="modal" id="new-question-modal" tabindex="-1" role="dialog">
+<div class="modal" id="new-answer-modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">new question</h5>
+        <h5 class="modal-title">new answer</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <%= form_for :question, url:"/questions" do %>
+        <%= form_for :answer, url:"/answer" do %>
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input type="email" class="form-control" name="email" id="exampleInputEmail1"  required="true" aria-describedby="emailHelp" placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
-            <label for="question">Question</label>
-            <input type="text" class="form-control" name="questionBoby" id="question" placeholder="Question">
+            <label for="answer">Answer</label>
+            <input type="text" class="form-control" name="answerBody" id="answerBody" placeholder="Answer">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
